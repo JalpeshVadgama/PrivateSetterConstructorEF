@@ -6,7 +6,7 @@ namespace PrivateSetterConstructorEF
     {
         public EmployeeContext() :base("DefaultConnectionString")
         {
-            
+
         }
         public DbSet<Employee> Employee { get; set; }
     }

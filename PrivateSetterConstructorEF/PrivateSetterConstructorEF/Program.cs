@@ -1,4 +1,6 @@
-﻿namespace PrivateSetterConstructorEF
+﻿using System;
+
+namespace PrivateSetterConstructorEF
 {
     class Program
     {
@@ -9,6 +11,9 @@
                 Employee employee = new Employee("Jalpesh", "Vadgama");
                 employeeContext.Employee.Add(employee);
                 employeeContext.SaveChanges();
+
+                Console.WriteLine("Employee Saved");
+
             }
         }
     }
