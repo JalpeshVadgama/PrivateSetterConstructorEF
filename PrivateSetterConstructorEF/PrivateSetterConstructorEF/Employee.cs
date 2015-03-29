@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace PrivateSetterConstructorEF
 {
     public class Employee
@@ -12,6 +14,7 @@ namespace PrivateSetterConstructorEF
         {
             
         }
+        [Key]
         public int EmployeeId { get; set; }
         public string FirstName { get; private set; }
         public string LastName { get; private set; }

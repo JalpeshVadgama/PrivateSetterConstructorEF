@@ -8,6 +8,6 @@ namespace PrivateSetterConstructorEF
         {
             
         }
-        DbSet<Employee> Employee { get; set; }
+        public DbSet<Employee> Employee { get; set; }
     }
 }
