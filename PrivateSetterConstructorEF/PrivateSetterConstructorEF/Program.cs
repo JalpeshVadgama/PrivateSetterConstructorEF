@@ -9,11 +9,10 @@ namespace PrivateSetterConstructorEF
             using (EmployeeContext employeeContext = new EmployeeContext())
             {
                 Employee employee = new Employee("Jalpesh", "Vadgama");
-                employeeContext.Employee.Add(employee);
+                employeeContext.Employees.Add(employee);
                 employeeContext.SaveChanges();
 
                 Console.WriteLine("Employee Saved");
-
             }
         }
     }
